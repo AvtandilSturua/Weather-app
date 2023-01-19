@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+:root {
+  --backColor: #1f4690;
+  --textColor: white;
+  --primaryColor: #3a5ba0;
+  --secondaryColor: #ffa500;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  box-sizing: border-box;
+  background-color: var(--backColor);
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+.App {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+header {
+  width: 100vw;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header h1 {
+  font-size: 2rem;
+  color: var(--textColor);
+}
+.input-box {
+  width: 60vh;
+  display: flex;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  padding: 5px;
+  background-color: transparent;
+}
+.input-box input {
+  width: 70vw;
+  padding: 10px;
+  background-color: white;
+  outline: var(--backColor);
+  border: 3px solid var(--backColor);
+  border-radius: 3px;
+  margin: 5px;
+}
+.input-box button {
+  padding: 10px 20px;
+  background-color: white;
+  color: var(--backColor);
+  font-weight: bolder;
+  outline: var(--backColor);
+  border: 2px solid var(--backColor);
+  cursor: pointer;
+}
+main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info {
+  width: 55vh;
+  height: auto;
+  border: 2px solid white;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.name {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 2px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.name h3 {
+  font-size: 1.5rem;
+  color: var(--secondaryColor);
+  margin: 5px;
+}
+.condition {
+  width: 100%;
+  height: auto;
+  text-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  flex-direction: column;
+}
+.condition h2 {
+  font-size: 2rem;
+  padding: 2px;
+  margin: 5px;
+  color: var(--secondaryColor);
+}
+.condition h3 {
+  font: 1.5rem;
+  color: white;
+  padding: 10px;
+  margin: 5px;
+  border: 2px solid white;
+  border-radius: 7px;
+  background-color: var(--secondaryColor);
+  width: 95%;
+}
+span {
+  color: white;
+}
+.other-stuff {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 2px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 2%;
+  flex-direction: column;
+  text-align: start;
+}
+.other-stuff h3 {
+  font: 1.3rem;
+  color: white;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 7px;
+  background-color: var(--secondaryColor);
+  width: 95%;
+  margin: 5px;
+}
+@media (max-width: 650px) {
+  .input-box {
+    width: 95vw;
+  }
+}
+@media (max-width: 500px) {
+  .info {
+    width: 95vw;
+  }
+}
+@media (max-width: 330px) {
+  .input-box button {
+    padding: 10px 10px;
+  }
+}
